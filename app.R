@@ -75,14 +75,17 @@ ui <- navbarPage(
 
 	  tabPanel(title = "Compare", 
 		mainPanel(
-			 div(class="cmpm1",
+			 
+			div(class="cmpm1",
 			  tags$style(type = "text/css", ".cmpm1 { position: fixed; border-width:5px; border-style:double; width: 852px; height: 480px;left:0px}"),
-			  leafletOutput("cmp1", width = "100%", height = "100%"),
-			  ),
-			  div(class="cmpm2",
+			  textOutput("cmptext1"),
+			  leafletOutput("cmp1", width = "100%", height = "95%"),
+			 ),
+			div(class="cmpm2",
 			  tags$style(type = "text/css", ".cmpm2 { position: fixed; border-width:5px; border-style:double; width: 852px; height: 480px;left:1000px}"),
-			  leafletOutput("cmp2", width = "100%", height = "100%"),
-			  )
+			  textOutput("cmptext2"),
+			  leafletOutput("cmp2", width = "100%", height = "95%"),
+		     )
 		)
 
 
@@ -357,6 +360,13 @@ ui <- navbarPage(
 
 	output$text5 <- renderText({
 		"Date: 2021/3/12" 
+	})
+
+	output$cmptext1 <- renderText({
+		"Map 2010" 
+	})
+	output$cmptext2 <- renderText({
+		"Map 2018" 
 	})
 
 	

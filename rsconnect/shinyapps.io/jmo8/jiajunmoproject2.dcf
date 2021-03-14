@@ -5,6 +5,6 @@ account: jmo8
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 3786679
-bundleId: 4340974
+bundleId: 4341185
 url: https://jmo8.shinyapps.io/jiajunmoproject2/
-when: 1615682579.02027
+when: 1615688649.58794
